@@ -1,0 +1,3042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+    <characteristicsList>
+        <characteristic code = "FCT_WORLD" action = "c">
+            <unversionedContent templateCode = "FCT_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Caractéristiques de fonctionnement</label>
+                <description lang = "fr">Fonctionnement de la carte World</description>
+                <inputValue code = "RES_FISCAL_BO" value = "true"/>
+                <listOfChoices code = "SUPPORT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "SUPPORT_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_KRT_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_CARTE_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_CARTE_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "SUPPORT_CTR_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PRODUIT_COD" value = "PEL"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "ZONE_GEO_KRT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "ZONE_COD" value = "001"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "GAR_RISK_WORLD" action = "c">
+            <unversionedContent templateCode = "GAR_RISK"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Garantie et risque sur WORLD</label>
+                <description lang = "fr">Gestion du risque reglementaire et conseil banque</description>
+                <inputValue code = "DUR_MIN_REC" value = "5"/>
+                <listOfChoices code = "QUALIFICATION" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "QUALIFICATION_COD" value = "A"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "QUALIFICATION_COD" value = "B"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "QUALIFICATION_COD" value = "C"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "EXP_MAX_RISK" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "EXPO_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "EXPO_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "GAR_CAPITAL" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "GARANTIE_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PROFIL_RISK" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "PROFIL_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "PROFIL_COD" value = "2"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "PROFIL_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "UTIL_ANNUEL" action = "c">
+            <unversionedContent templateCode = "UTIL_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Utilisation annuelle</label>
+                <description lang = "fr">Caractéristiques d'utilisation annuelle de la carte WORLD</description>
+                <amount code = "MNT_PLF_RET_AMT" value = "120000" currency = "EUR"/>
+                <amount code = "MNT_PLF_PAI_AMT" value = "1200000" currency = "EUR"/>
+                <amount code = "MNT_PLF_KRT_AMT" currency = "EUR" min = "1000" max = "10000"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "1500" currency = "EUR"/>
+                <listOfChoices code = "PER_PLF_RET_CD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "A"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PER_PLF_PAI_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "A"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "UTIL_MENSUEL" action = "c">
+            <unversionedContent templateCode = "UTIL_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Utilisation mensuelle</label>
+                <description lang = "fr">Caractéristiques d'utilisation mensuelle de la carte WORLD</description>
+                <amount code = "MNT_PLF_RET_AMT" value = "10000" currency = "EUR"/>
+                <amount code = "MNT_PLF_PAI_AMT" value = "100000" currency = "EUR"/>
+                <amount code = "MNT_PLF_KRT_AMT" currency = "EUR" min = "1000" max = "10000"/>
+                <amount code = "MNT_MAX_OPE_AMT" currency = "EUR"/>
+                <listOfChoices code = "PER_PLF_RET_CD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "M"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PER_PLF_PAI_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "M"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "UTIL_SEMESTRIEL" action = "c">
+            <unversionedContent templateCode = "UTIL_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Utilisation semestrielle</label>
+                <description lang = "fr">Caractéristiques d'utilisation semestrielle de la carte WORLD</description>
+                <amount code = "MNT_PLF_RET_AMT" value = "60000" currency = "EUR"/>
+                <amount code = "MNT_PLF_PAI_AMT" value = "600000" currency = "EUR"/>
+                <amount code = "MNT_PLF_KRT_AMT" currency = "EUR" min = "1000" max = "10000"/>
+                <amount code = "MNT_MAX_OPE_AMT" currency = "EUR"/>
+                <listOfChoices code = "PER_PLF_RET_CD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "S"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PER_PLF_PAI_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "S"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "UTIL_TRIMESTRIEL" action = "c">
+            <unversionedContent templateCode = "UTIL_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Utilisation trimestrielle</label>
+                <description lang = "fr">Caractéristiques d'utilisation trimestrielle de la carte WORLD</description>
+                <amount code = "MNT_PLF_RET_AMT" value = "30000" currency = "EUR"/>
+                <amount code = "MNT_PLF_PAI_AMT" value = "300000" currency = "EUR"/>
+                <amount code = "MNT_PLF_KRT_AMT" currency = "EUR" min = "1000" max = "10000"/>
+                <amount code = "MNT_MAX_OPE_AMT" currency = "EUR"/>
+                <listOfChoices code = "PER_PLF_PAI_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "T"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_DEBIT_IMMED" action = "c">
+            <unversionedContent templateCode = "OPT_DIM_KRT">
+                <eligibilityRule startDate = "01-01-2011" endDate = "01-01-2017" hasInternalEligibility = "true" hasExternalEligibility = "true">
+                    <internalEligibility category = "05">
+                        <description lang = "fr">éligibilité catalogue CSO_DEBIT_IMMED</description>
+                    </internalEligibility>
+                    <externalEligibility>
+                        <reference>référence producteur CSO_DEBIT_IMMED</reference>
+                    </externalEligibility>
+                </eligibilityRule>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option débit immédiat</label>
+                <description lang = "fr">option de débit immediat, meilleur contrôle de son budget</description>
+                <inputValue code = "INFORMATION_TARIF" defaultValue = "Gratuit"/>
+                <listOfChoices code = "TYPE_DEBIT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_DEBIT_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_DEBIT_DIFFERE" action = "c">
+            <unversionedContent templateCode = "OPT_DIM_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true" hasExternalEligibility = "true">
+                    <internalEligibility category = "02">
+                        <description lang = "fr">éligibilité catalogue CSO_DEBIT_DIFFERE</description>
+                    </internalEligibility>
+                    <externalEligibility>
+                        <reference>éligibilité producteur CSO_DEBIT_DIFFERE</reference>
+                    </externalEligibility>
+                </eligibilityRule>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option débit différé</label>
+                <description lang = "fr">option de débit différé, meilleur contrôle de son budget</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <listOfChoices code = "TYPE_DEBIT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_DEBIT_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_DDF" action = "c">
+            <unversionedContent templateCode = "OPT_DDF_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option de débit différé - plus</label>
+                <description lang = "fr">option de débit différé, mode de fonctionnement</description>
+                <inputValue code = "INFORMATION_TARIF" value = "plus 15 par rapport a DI"/>
+                <inputValue code = "JOUR_DEBIT_J" value = "31"/>
+                <inputValue code = "AGE_AN" defaultValue = "18" min = "18"/>
+                <listOfChoices code = "TYPE_DEBIT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_DEBIT_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_VSL" action = "c">
+            <unversionedContent templateCode = "OPT_VSL_KRT">
+                <eligibilityRule startDate = "31-12-2013" endDate = "31-12-2017" hasInternalEligibility = "true" hasExternalEligibility = "true">
+                    <internalEligibility>
+                        <description lang = "fr">Eligibilité catalogue  CSO_VSL</description>
+                    </internalEligibility>
+                    <externalEligibility>
+                        <reference>éligibilité producteur CSO_VSL</reference>
+                    </externalEligibility>
+                </eligibilityRule>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Visuel</label>
+                <description lang = "fr">Visuel disponible pour les client ancienneté &gt;=2 ans</description>
+                <inputValue code = "ANC_CLIENT_AN" defaultValue = "2" min = "2"/>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <listOfChoices code = "TYP_VISUEL_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COULEUR_COD" value = "263FFF"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_RLV" action = "c">
+            <unversionedContent templateCode = "OPT_RLV_KRT">
+                <eligibilityRule startDate = "01-01-2011" endDate = "01-01-2018" hasInternalEligibility = "true" hasExternalEligibility = "true">
+                    <internalEligibility>
+                        <description lang = "fr">Eligibilité catalogue CSO_RLV</description>
+                    </internalEligibility>
+                    <externalEligibility>
+                        <reference>référence producteur CSO_RLV</reference>
+                    </externalEligibility>
+                </eligibilityRule>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Choix de relevé</label>
+                <description lang = "fr">Choix de relevé</description>
+                <inputValue code = "INFORMATION_TARIF"/>
+                <listOfChoices code = "TYPE_RLV_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_RELEVE_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_RELEVE_COD" value = "2"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_RELEVE_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PER_RLV_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PERIODICITE_COD" value = "M"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "FCT_MONEO" action = "c">
+            <unversionedContent templateCode = "FCT_KRT"/>
+            <versionedContent startDate = "01-01-2011" endDate = "31-01-2011">
+                <label lang = "fr">Caractéristiques de fonctionnement version 1</label>
+                <description lang = "fr">Fonctionnement de la carte MONEO version 1</description>
+                <inputValue code = "RES_FISCAL_BO" value = "true"/>
+                <listOfChoices code = "SUPPORT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "SUPPORT_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_KRT_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_CARTE_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_CARTE_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "SUPPORT_CTR_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PRODUIT_COD" value = "PEL"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "ZONE_GEO_KRT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "ZONE_COD" value = "001"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-02-2011">
+                <label lang = "fr">Caractéristiques de fonctionnement version 2</label>
+                <description lang = "fr">Fonctionnement de la carte MONEO version 2</description>
+                <inputValue code = "RES_FISCAL_BO" value = "false"/>
+                <listOfChoices code = "SUPPORT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "SUPPORT_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_KRT_CD" isMultiple = "true" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_CARTE_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_CARTE_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "SUPPORT_CTR_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "PRODUIT_COD" value = "PEL"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "ZONE_GEO_KRT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "ZONE_COD" value = "001"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_ACT_AVN" action = "c">
+            <unversionedContent templateCode = "ACT_GST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de gestion d'avenant</label>
+                <listOfChoices code = "TYPE_ACTE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "ACTE_GESTION_COD" value = "AVENA"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_ACT_CLO" action = "c">
+            <unversionedContent templateCode = "ACT_GST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de gestion de clôture</label>
+                <listOfChoices code = "TYPE_ACTE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "ACTE_GESTION_COD" value = "CLOTU"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_ACT_OUV" action = "c">
+            <unversionedContent templateCode = "ACT_GST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de gestion d'ouverture</label>
+                <listOfChoices code = "TYPE_ACTE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "ACTE_GESTION_COD" value = "OUVER"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_ACT_REMPL" action = "c">
+            <unversionedContent templateCode = "ACT_GST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de gestion de remplacement</label>
+                <listOfChoices code = "TYPE_ACTE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "ACTE_GESTION_COD" value = "REMPL"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_ACT_REN" action = "c">
+            <unversionedContent templateCode = "ACT_GST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de gestion de renouvellement</label>
+                <listOfChoices code = "TYPE_ACTE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "ACTE_GESTION_COD" value = "RENOU"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_ACT_TRS" action = "c">
+            <unversionedContent templateCode = "ACT_GST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de gestion de transfert</label>
+                <listOfChoices code = "TYPE_ACTE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "ACTE_GESTION_COD" value = "TRANS"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_MONEO" action = "c">
+            <unversionedContent templateCode = "OPT_MNO_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Choix Monéo</label>
+                <description lang = "fr">Option permettant à la carte de paiement d'intégerer moneo sur le meme support</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Red de 2 euros supp phys"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "30" currency = "EUR" min = "20" max = "30"/>
+                <amount code = "MNT_PLF_KRT_AMT" value = "100" currency = "EUR" max = "100"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_JST" action = "c">
+            <unversionedContent templateCode = "MCR_JST"/>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2011">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 1</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2012" endDate = "31-12-2012">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 2</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2013" endDate = "31-12-2013">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 3</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2014" endDate = "31-12-2014">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 4</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2015" endDate = "31-12-2015">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 5</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2016" endDate = "31-12-2016">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 6</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2017" endDate = "31-12-2017">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 7</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2018" endDate = "31-12-2018">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 8</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2019" endDate = "31-12-2019">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 9</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2020">
+                <label lang = "fr">Justificatif pour produit d'assurance</label>
+                <description lang = "fr">version 10</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_VH" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_VH_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "15-06-2013">
+                <label lang = "fr">Option assurance véhicule</label>
+                <description lang = "fr">version 1</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_VH_LOC_AMT" value = "20000" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "16-06-2013" endDate = "18-02-2014">
+                <label lang = "fr">Option assurance véhicule</label>
+                <description lang = "fr">version 2</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_VH_LOC_AMT" value = "20001" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "19-02-2014">
+                <label lang = "fr">Option assurance véhicule</label>
+                <description lang = "fr">version 3</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_VH_LOC_AMT" value = "20002" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_AVY" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_AVY_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "13-02-2012">
+                <label lang = "fr">Option assurance voyage</label>
+                <description lang = "fr">version 1</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_ACC_VOY_AMT" value = "4000" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "false"/>
+            </versionedContent>
+            <versionedContent startDate = "14-02-2012" endDate = "16-08-2013">
+                <label lang = "fr">Option assurance voyage</label>
+                <description lang = "fr">version 2</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_ACC_VOY_AMT" value = "4001" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "false"/>
+            </versionedContent>
+            <versionedContent startDate = "17-08-2013">
+                <label lang = "fr">Option assurance voyage</label>
+                <description lang = "fr">version 3</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_ACC_VOY_AMT" value = "4002" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "false"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_MED_AVG" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_MED_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2012">
+                <label lang = "fr">Option assurance médicale - AVG</label>
+                <description lang = "fr">version 1</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_MED_AMT" value = "300" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2013" endDate = "31-12-2018">
+                <label lang = "fr">Option assurance médicale - AVG</label>
+                <description lang = "fr">version 2</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_MED_AMT" value = "301" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2019">
+                <label lang = "fr">Option assurance médicale - AVG</label>
+                <description lang = "fr">version 3</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_MED_AMT" value = "302" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_MED_HG" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_MED_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "02-11-2012">
+                <label lang = "fr">Option assurance médicale - HG</label>
+                <description lang = "fr">version 1</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Non gratuit"/>
+                <amount code = "MNT_PLF_ASS_MED_AMT" value = "100" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "03-11-2012" endDate = "31-12-2014">
+                <label lang = "fr">Option assurance médicale - HG</label>
+                <description lang = "fr">version 2</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Non gratuit"/>
+                <amount code = "MNT_PLF_ASS_MED_AMT" value = "101" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2015">
+                <label lang = "fr">Option assurance médicale - HG</label>
+                <description lang = "fr">version 3</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Non gratuit"/>
+                <amount code = "MNT_PLF_ASS_MED_AMT" value = "102" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_NEIGE" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_NEIGE_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "12-12-2012">
+                <label lang = "fr">Option assurance neige</label>
+                <description lang = "fr">version 1</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_NEIGE_AMT" value = "100" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "13-12-2012" endDate = "31-12-2015">
+                <label lang = "fr">Option assurance neige</label>
+                <description lang = "fr">version 2</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_NEIGE_AMT" value = "101" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2016">
+                <label lang = "fr">Option assurance neige</label>
+                <description lang = "fr">version 3</description>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_NEIGE_AMT" value = "102" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_HAB_AVG" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_HAB_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2011">
+                <label lang = "fr">Option assurance habitation - AVG</label>
+                <description lang = "fr">version 1</description>
+                <inputValue code = "DAT_DER_IMP" value = "2001-01-01"/>
+                <amount code = "MNT_PLF_ASS_HAB_AMT" value = "1300" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2012" endDate = "31-12-2013">
+                <label lang = "fr">Option assurance habitation - AVG</label>
+                <description lang = "fr">version 2</description>
+                <inputValue code = "DAT_DER_IMP" value = "2001-01-01"/>
+                <amount code = "MNT_PLF_ASS_HAB_AMT" value = "1301" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2014">
+                <label lang = "fr">Option assurance habitation - AVG</label>
+                <description lang = "fr">version 3</description>
+                <inputValue code = "DAT_DER_IMP" value = "2001-01-01"/>
+                <amount code = "MNT_PLF_ASS_HAB_AMT" value = "1302" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_HAB_HG" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_HAB_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2011">
+                <label lang = "fr">Option assurance habitation - HG</label>
+                <description lang = "fr">version 1</description>
+                <amount code = "MNT_PLF_ASS_HAB_AMT" value = "800" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "6"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2012" endDate = "31-08-2012">
+                <label lang = "fr">Option assurance habitation - HG</label>
+                <description lang = "fr">version 2</description>
+                <amount code = "MNT_PLF_ASS_HAB_AMT" value = "801" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "6"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-09-2012">
+                <label lang = "fr">Option assurance habitation - HG</label>
+                <description lang = "fr">version 3</description>
+                <amount code = "MNT_PLF_ASS_HAB_AMT" value = "802" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ASSUR_COD" value = "6"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_ASS_JUR" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_JUR_KRT">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2012">
+                <label lang = "fr">Option assurance juridique</label>
+                <description lang = "fr">version 1</description>
+                <amount code = "MNT_PLF_ASS_JUR_AMT" value = "800" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "4"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2013" endDate = "06-05-2018">
+                <label lang = "fr">Option assurance juridique</label>
+                <description lang = "fr">version 2</description>
+                <amount code = "MNT_PLF_ASS_JUR_AMT" value = "801" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "4"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "07-05-2018">
+                <label lang = "fr">Option assurance juridique</label>
+                <description lang = "fr">version 3</description>
+                <amount code = "MNT_PLF_ASS_JUR_AMT" value = "802" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "4"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_FCT_PEL" action = "c">
+            <unversionedContent templateCode = "FCT_EPA"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Caractéristiques de fonctionnement des PEL</label>
+                <inputValue code = "DUR_REG" min = "4" max = "8"/>
+                <amount code = "MNT_PLANCHER" value = "10" currency = "EUR"/>
+                <amount code = "MNT_PLAFOND" value = "61200" currency = "EUR"/>
+                <amount code = "VER_INIT_MIN" value = "225" currency = "EUR"/>
+                <listOfChoices code = "TAUX_CA" isMultiple = "false" isFiltered = "false"/>
+                <listOfChoices code = "TAUX_RG" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "INDEX_COD" value = "PEL"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "GAR_RISK_PEL" action = "c">
+            <unversionedContent templateCode = "GAR_RISK_EPA"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Caractéristiques de fonctionnement des PEL</label>
+                <description lang = "fr">Risques</description>
+                <inputValue code = "DUR_MIN_REC" min = "4"/>
+                <listOfChoices code = "QUALIFICATION" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "QUALIFICATION_COD" value = "A"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "EXP_MAX_RISK" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "EXPO_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "GAR_CAPITAL" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "GARANTIE_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PROFIL_RISK" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "PROFIL_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "VERS_PONCT" action = "c">
+            <unversionedContent templateCode = "VERS_EPA"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des versements sur compte épargne</label>
+                <description lang = "fr">Versement ponctuel</description>
+                <amount code = "MNT_MIN_OP" value = "50" currency = "EUR"/>
+                <listOfChoices code = "TYP_OP" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "TYPE_VERSEMENT_COD" value = "00002"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "VERS_MENSUEL" action = "c">
+            <unversionedContent templateCode = "VERS_EPA"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des versements sur compte épargne</label>
+                <description lang = "fr">Versement mensuel</description>
+                <amount code = "MNT_MIN_OP" value = "15" currency = "EUR"/>
+                <listOfChoices code = "TYP_OP" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "TYPE_VERSEMENT_COD" value = "00003"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_DYN_PEL_PLAC" action = "c">
+            <unversionedContent templateCode = "OPT_DYN_EPA">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option sur compte PEL</label>
+                <description lang = "fr">Dynamique Epargne</description>
+                <inputValue code = "OBJECTIF" min = "5.123" max = "15.333"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_DYN_PEL_PRET" action = "c">
+            <unversionedContent templateCode = "OPT_DYN_EPA">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option sur compte PEL</label>
+                <description lang = "fr">Dynamique Epargne</description>
+                <inputValue code = "OBJECTIF" min = "10" max = "20"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_FCT_CPT" action = "c">
+            <unversionedContent templateCode = "FCT_CPT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des comptes courant rémunérés</label>
+                <inputValue code = "TX_REMUN"/>
+                <amount code = "MNT_PLAFOND" currency = "EUR"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_LIM_MEDIUM" action = "c">
+            <unversionedContent templateCode = "OPT_LIM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Limite de compte - medium</label>
+                <description lang = "fr">Niveau - medium</description>
+                <amount code = "MNT_LIMITE" value = "120" currency = "EUR"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_LIM_STAR" action = "c">
+            <unversionedContent templateCode = "OPT_LIM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Limite de compte - STAR</label>
+                <description lang = "fr">Niveau - STAR</description>
+                <amount code = "MNT_LIMITE" value = "200" currency = "EUR"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_LIM_PLATINIUM" action = "c">
+            <unversionedContent templateCode = "OPT_LIM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Limite de compte - PLAT</label>
+                <description lang = "fr">Niveau - PLATINIUM</description>
+                <amount code = "MNT_LIMITE" value = "1600" currency = "EUR"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_LIM_GOLD" action = "c">
+            <unversionedContent templateCode = "OPT_LIM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Limite de compte - GOLD</label>
+                <description lang = "fr">Niveau - GOLD</description>
+                <amount code = "MNT_LIMITE" value = "1000" currency = "EUR"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_FCT_CAT" action = "c">
+            <unversionedContent templateCode = "FCT_CAT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des comptes à terme</label>
+                <description lang = "fr">Caractéristiques de fonctionnement</description>
+                <inputValue code = "TX_BRUT"/>
+                <inputValue code = "DUREE_M" min = "3" max = "120"/>
+                <inputValue code = "PENAL_RETRAIT"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_FCT_ASS_VIE" action = "c">
+            <unversionedContent templateCode = "ASS_FCT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des assurances vie</label>
+                <description lang = "fr">Frais de gestion et d'entrée</description>
+                <inputValue code = "FRAIS_GESTION" value = "0.56"/>
+                <inputValue code = "FRAIS_ENTREE" value = "2.52"/>
+                <amount code = "MNT_MIN_OUV" value = "250" currency = "EUR"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_VERS_TRIMESTRIEL" action = "c">
+            <unversionedContent templateCode = "ASS_VER"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des assurances vie</label>
+                <description lang = "fr">Palier minimal de versement trimestriel</description>
+                <amount code = "MNT_MIN_OP" value = "45" currency = "EUR"/>
+                <listOfChoices code = "TYP_OP" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "TYPE_VERSEMENT_COD" value = "00004"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_VERS_ANNUEL" action = "c">
+            <unversionedContent templateCode = "ASS_VER"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des assurances vie</label>
+                <description lang = "fr">Palier minimal de versement annuel</description>
+                <amount code = "MNT_MIN_OP" value = "100" currency = "EUR"/>
+                <listOfChoices code = "TYP_OP" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "TYPE_VERSEMENT_COD" value = "00006"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_VERS_MENSUEL" action = "c">
+            <unversionedContent templateCode = "ASS_VER"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des assurances vie</label>
+                <description lang = "fr">Palier minimal de versement mensuel</description>
+                <amount code = "MNT_MIN_OP" value = "20" currency = "EUR"/>
+                <listOfChoices code = "TYP_OP" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "TYPE_VERSEMENT_COD" value = "00003"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_VERS_PONCT" action = "c">
+            <unversionedContent templateCode = "ASS_VER"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Fonctionnement des assurances vie</label>
+                <description lang = "fr">Palier minimal de versement ponctuel</description>
+                <amount code = "MNT_MIN_OP" value = "50" currency = "EUR"/>
+                <listOfChoices code = "TYP_OP" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "COMPANY_COD" value = "SOPRA"/>
+                        <keyValue code = "TYPE_VERSEMENT_COD" value = "00002"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_CPTE_GARANTI" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_FOND">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option compte garanti</label>
+                <description lang = "fr">Fonctionnement des assurances vies</description>
+                <inputValue code = "TX_MIN_GAR"/>
+                <inputValue code = "PCT_MIN_OBLIG" value = "80.000"/>
+                <listOfChoices code = "TYPE_SUPPORT" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SUP_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_ACTIF" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ACTIF_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_ACTIF_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SECTEUR" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SEC_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_FOND_DYN" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_FOND">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option fond dynamique</label>
+                <description lang = "fr">Fonctionnement des assurances vies</description>
+                <inputValue code = "PCT_MIN_OBLIG" value = "30.000"/>
+                <listOfChoices code = "TYPE_SUPPORT" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SUP_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_ACTIF" isMultiple = "true" isFiltered = "false"/>
+                <listOfChoices code = "TYPE_SECTEUR" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SEC_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SEC_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_FOND_PRUDENT" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_FOND">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option fond prudent</label>
+                <description lang = "fr">Fonctionnement des assurances vies</description>
+                <inputValue code = "PCT_MIN_OBLIG" value = "50.000"/>
+                <listOfChoices code = "TYPE_SUPPORT" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SUP_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_ACTIF" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_ACTIF_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SECTEUR" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SEC_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_FOND_MONDE" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_FOND">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option fond monde</label>
+                <description lang = "fr">Fonctionnement des assurances vies</description>
+                <listOfChoices code = "TYPE_SUPPORT" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SUP_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_ACTIF" isMultiple = "true" isFiltered = "false"/>
+                <listOfChoices code = "TYPE_SECTEUR" isMultiple = "true" isFiltered = "false"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CSO_RENTE_VIE" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_RENTE">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Option sortie rente</label>
+                <description lang = "fr">Fonctionnement des assurances vies</description>
+                <amount code = "MNT_MENSUEL" value = "1000" currency = "EUR"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "ACTE_TIERS" action = "c">
+            <unversionedContent templateCode = "M_ACTE_TIERS"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Caractéristiques de l'acte</label>
+                <listOfChoices code = "TYPE_PERSONNE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_PERS_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_PERS_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "NATURE_PERS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "NATU_PERS_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "NATU_PERS_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_SIGN_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "ACTE_MOY" action = "c">
+            <unversionedContent templateCode = "M_ACTE_MOY"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Caractéristiques des moyens de l'acte</label>
+                <inputValue code = "CONDITION" value = "Pas de condition particuliere"/>
+                <inputValue code = "REALISATION_ONLINE" value = "True"/>
+                <inputValue code = "DELAI_RETRACT" value = "14"/>
+                <inputValue code = "CODE_OFFRE" value = "Offre WORLD de la mort"/>
+                <listOfChoices code = "ACTE_GESTION_CD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "ACTE_GESTION_COD" value = "OUVER"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "GAMME_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_GAMME_COD" value = "3"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_CTR" action = "c">
+            <unversionedContent templateCode = "MCR_DOC"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Contrat</label>
+                <listOfChoices code = "DOC_REMIS_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "7"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_LIVRET_ACCUEIL" action = "c">
+            <unversionedContent templateCode = "MCR_DOC"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Livret d'accueil</label>
+                <listOfChoices code = "DOC_REMIS_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "8"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_RECU" action = "c">
+            <unversionedContent templateCode = "MCR_DOC"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Recu</label>
+                <listOfChoices code = "DOC_REMIS_CD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "11"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_PCE_IDT" action = "c">
+            <unversionedContent templateCode = "MCR_JST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Carte d'identité nationale</label>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "false"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_AVS_IMP" action = "c">
+            <unversionedContent templateCode = "MCR_JST"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Avis d'imposition</label>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "6"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "CAR_JST_DOM" action = "c">
+            <unversionedContent templateCode = "MCR_JST"/>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2011">
+                <label lang = "fr">Justification de domicile</label>
+                <description lang = "fr">version 1</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2012" endDate = "31-12-2012">
+                <label lang = "fr">Justification de domicile</label>
+                <description lang = "fr">version 2</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2013">
+                <label lang = "fr">Justification de domicile</label>
+                <description lang = "fr">version 3</description>
+                <listOfChoices code = "CODE_JUSTIFICATIF_COD" isMultiple = "false" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "3"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "4"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_DOC_COD" value = "5"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "PRESENCE_COD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_PRES_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+                <listOfChoices code = "INTERVENANT_SOLLICITE_COD" isMultiple = "true" isFiltered = "true">
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "1"/>
+                    </choice>
+                    <choice>
+                        <keyValue code = "TYPE_INTER_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "OPT_DIM_ALL" action = "c">
+            <unversionedContent templateCode = "OPT_DIM_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">CSO -immed - pour l'éligibilité</label>
+                <inputValue code = "INFORMATION_TARIF" defaultValue = "Gratuit"/>
+                <listOfChoices code = "TYPE_DEBIT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_DEBIT_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "OPT_EURO_DDF" action = "c">
+            <unversionedContent templateCode = "OPT_DDF_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">CSO - différé - pour l'éligibilité</label>
+                <inputValue code = "INFORMATION_TARIF" value = "plus 15 par rapport a DI"/>
+                <inputValue code = "JOUR_DEBIT_J" value = "31"/>
+                <inputValue code = "AGE_AN" defaultValue = "18" min = "18"/>
+                <listOfChoices code = "TYPE_DEBIT_CD" isMultiple = "false" isFiltered = "true">
+                    <choice selected = "true">
+                        <keyValue code = "TYPE_DEBIT_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "OPT_EURO_ASS_AVY" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_AVY_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">CSO - ass voy - pour l'éligibilité</label>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_ACC_VOY_AMT" value = "4000" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "false"/>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "OPT_EURO_ASS_VH" action = "c">
+            <unversionedContent templateCode = "OPT_ASS_VH_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">CSO - ass veh -pour l'éligibilité</label>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <amount code = "MNT_PLF_ASS_VH_LOC_AMT" value = "20000" currency = "EUR"/>
+                <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "1"/>
+                    </choice>
+                    <choice default = "true">
+                        <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+        <characteristic code = "OPT_EURO_VSL" action = "c">
+            <unversionedContent templateCode = "OPT_VSL_KRT"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">CSO - ass vis -pour l'éligibilité</label>
+                <inputValue code = "ANC_CLIENT_AN" defaultValue = "5" min = "2"/>
+                <inputValue code = "INFORMATION_TARIF" value = "Gratuit"/>
+                <listOfChoices code = "TYP_VISUEL_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "COULEUR_COD" value = "263FFF"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </characteristic>
+    </characteristicsList>
+    <criteriaList>
+        <criteria code = "EGI_PPR_WORLD" action = "c">
+            <unversionedContent templateCode = "CARTE_RET_PAIE"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Critères d'éligibilité appliqués</label>
+                <inputValue code = "AGE_CARTE" min = "18" max = "80"/>
+                <inputValue code = "AGE_PAIEMENT" min = "25"/>
+                <inputValue code = "PARTICULIER"/>
+                <amount code = "REVENU_DDIF" value = "16500" currency = "EUR"/>
+                <amount code = "CA_DDIF" currency = "EUR"/>
+                <listOfChoices code = "CLASSIF_AUTORISEE" isMultiple = "true"/>
+            </versionedContent>
+        </criteria>
+        <criteria code = "EGI_PPR_MONEO" action = "c">
+            <unversionedContent templateCode = "CARTE_RET_PAIE"/>
+            <versionedContent startDate = "01-01-2011" endDate = "30-04-2011">
+                <label lang = "fr">Critères d'éligibilité appliqués version 1</label>
+                <inputValue code = "AGE_CARTE" min = "18" max = "80"/>
+                <inputValue code = "AGE_PAIEMENT" min = "25"/>
+                <inputValue code = "PARTICULIER"/>
+                <amount code = "REVENU_DDIF" value = "16500" currency = "EUR"/>
+                <amount code = "CA_DDIF" currency = "EUR"/>
+                <listOfChoices code = "CLASSIF_AUTORISEE" isMultiple = "true"/>
+            </versionedContent>
+            <versionedContent startDate = "01-05-2011">
+                <label lang = "fr">Critères d'éligibilité appliqués version 2</label>
+                <inputValue code = "AGE_CARTE" min = "21" max = "80"/>
+                <inputValue code = "AGE_PAIEMENT" min = "25"/>
+                <inputValue code = "PARTICULIER"/>
+                <amount code = "REVENU_DDIF" value = "16500" currency = "EUR"/>
+                <amount code = "CA_DDIF" currency = "EUR"/>
+                <listOfChoices code = "CLASSIF_AUTORISEE" isMultiple = "true"/>
+            </versionedContent>
+        </criteria>
+    </criteriaList>
+    <groupsList>
+        <group code = "GRP_GST" action = "c">
+            <unversionedContent templateCode = "MGR_GST"/>
+            <versionedContent startDate = "01-01-2011" endDate = "28-02-2011">
+                <label lang = "fr">Goupe de caractéristiques de gestion version 1</label>
+                <description lang = "fr">Gestion de la carte MONEO version 1</description>
+                <pcElement code = "CAR_ACT_OUV"/>
+                <pcElement code = "CAR_ACT_TRS"/>
+                <pcElement code = "CAR_ACT_AVN"/>
+                <pcElement code = "CAR_ACT_REMPL"/>
+                <pcElement code = "CAR_ACT_CLO"/>
+                <pcElement code = "CAR_ACT_REN"/>
+            </versionedContent>
+            <versionedContent startDate = "01-03-2011">
+                <label lang = "fr">Goupe de caractéristiques de gestion version 2</label>
+                <description lang = "fr">Gestion de la carte MONEO version 2</description>
+                <pcElement code = "CAR_ACT_OUV"/>
+                <pcElement code = "CAR_ACT_TRS"/>
+                <pcElement code = "CAR_ACT_AVN"/>
+                <pcElement code = "CAR_ACT_REMPL"/>
+                <pcElement code = "CAR_ACT_CLO"/>
+            </versionedContent>
+        </group>
+        <group code = "LST_DOCUMENT" action = "c">
+            <unversionedContent templateCode = "MGR_LST_DOC"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Liste des documents remis</label>
+                <pcElement code = "CAR_CTR"/>
+                <pcElement code = "CAR_LIVRET_ACCUEIL"/>
+                <pcElement code = "CAR_RECU"/>
+            </versionedContent>
+        </group>
+        <group code = "LST_JUST_2" action = "c">
+            <unversionedContent templateCode = "MGR_LST_JST_2"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Liste des justificatifs second niveau</label>
+                <pcElement code = "CAR_PCE_IDT"/>
+                <pcElement code = "CAR_CTR"/>
+            </versionedContent>
+        </group>
+        <group code = "LST_JUSTIFICATIF" action = "c">
+            <unversionedContent templateCode = "MGR_LST_JST"/>
+            <versionedContent startDate = "01-01-2011" endDate = "01-01-2012">
+                <label lang = "fr">Liste des justificatifs requis</label>
+                <description lang = "fr">version 1</description>
+                <pcElement code = "CAR_PCE_IDT"/>
+                <pcElement code = "CAR_AVS_IMP"/>
+                <pcElement code = "CAR_JST_DOM"/>
+                <grpElement code = "LST_JUST_2"/>
+            </versionedContent>
+            <versionedContent startDate = "02-01-2012" endDate = "05-08-2015">
+                <label lang = "fr">Liste des justificatifs requis</label>
+                <description lang = "fr">version 2</description>
+                <pcElement code = "CAR_PCE_IDT"/>
+                <pcElement code = "CAR_AVS_IMP"/>
+                <pcElement code = "CAR_JST_DOM"/>
+                <grpElement code = "LST_JUST_2"/>
+            </versionedContent>
+            <versionedContent startDate = "06-08-2015">
+                <label lang = "fr">Liste des justificatifs requis</label>
+                <description lang = "fr">version 3</description>
+                <pcElement code = "CAR_PCE_IDT"/>
+                <pcElement code = "CAR_AVS_IMP"/>
+                <pcElement code = "CAR_JST_DOM"/>
+                <grpElement code = "LST_JUST_2"/>
+            </versionedContent>
+        </group>
+    </groupsList>
+    <producerProductsList>
+        <producerProduct code = "PPR_CARTE_WORLD" action = "c">
+            <unversionedContent templateCode = "CARTE_RET_PAIE" modifiable = "true" eligibilityCriteria = "EGI_PPR_WORLD" producer = "PROD1" owner = "CRIFR">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true" hasExternalEligibility = "true" endDate = "01-01-2017">
+                    <internalEligibility category = "04">
+                        <description lang = "fr">Eligibilité catalogue pour PPR_CARTE_WORLD</description>
+                    </internalEligibility>
+                    <externalEligibility>
+                        <reference>Référence pour PPR_CARTE_WORLD</reference>
+                    </externalEligibility>
+                </eligibilityRule>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Carte WORLD</label>
+                <description lang = "fr">Carte de retrait</description>
+                <pcElement code = "FCT_WORLD"/>
+                <pcElement code = "GAR_RISK_WORLD"/>
+                <pcElement code = "UTIL_MENSUEL"/>
+                <pcElement code = "UTIL_TRIMESTRIEL"/>
+                <pcElement code = "UTIL_SEMESTRIEL"/>
+                <pcElement code = "UTIL_ANNUEL"/>
+                <option code = "OPT_DEBIT" templateCode = "OPTION_DEBIT" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Type de débit</label>
+                    <description lang = "fr">Option sur les types de débit</description>
+                    <optionElement code = "CSO_DEBIT_DIFFERE" defaultChoice = "false"/>
+                    <optionElement code = "CSO_DEBIT_IMMED" defaultChoice = "true"/>
+                    <optionElement code = "CSO_DDF" defaultChoice = "false"/>
+                </option>
+                <option code = "OPT_VSL" templateCode = "OPTION_VSL" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Type de visuel</label>
+                    <description lang = "fr">Option sur les types de visuel</description>
+                    <optionElement code = "CSO_VSL" defaultChoice = "true"/>
+                </option>
+                <option code = "OPT_RLV" templateCode = "OPTION_RLV" min = "1" presence = "M">
+                    <label lang = "fr">Type de relevé</label>
+                    <description lang = "fr">Choix des relevé et périodicité</description>
+                    <optionElement code = "CSO_RLV" defaultChoice = "true"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "EURO" action = "c">
+            <unversionedContent templateCode = "CARTE_RET_PAIE" modifiable = "true" eligibilityCriteria = "EGI_PPR_WORLD" producer = "PROD2" owner = "CRAJM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true" hasExternalEligibility = "false">
+                    <internalEligibility category = "14">
+                        <description lang = "fr">Eligibilité</description>
+                    </internalEligibility>
+                </eligibilityRule>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">PPR pour l'éligibilité</label>
+                <description lang = "fr">Carte de retrait</description>
+                <pcElement code = "FCT_WORLD"/>
+                <option code = "LST_DEBIT_EURO" templateCode = "OPTION_DEBIT" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Type de débit</label>
+                    <description lang = "fr">Option sur les types de débit</description>
+                    <optionElement code = "OPT_DIM_ALL" defaultChoice = "false"/>
+                    <optionElement code = "OPT_EURO_DDF" defaultChoice = "false"/>
+                </option>
+                <option code = "LST_ASSUR_EURO" templateCode = "OPTION_ASSUR" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Type d'assurance</label>
+                    <description lang = "fr">Option sur les assurances</description>
+                    <optionElement code = "OPT_EURO_ASS_VH" defaultChoice = "false"/>
+                    <optionElement code = "OPT_EURO_ASS_AVY" defaultChoice = "false"/>
+                </option>
+                <option code = "LST_VSL_EURO" templateCode = "OPTION_VSL" min = "1" presence = "O">
+                    <label lang = "fr">Type de visuel</label>
+                    <description lang = "fr">Choix des visuels</description>
+                    <optionElement code = "OPT_EURO_VSL" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_MONEO" action = "c">
+            <unversionedContent templateCode = "CARTE_RET_PAIE" modifiable = "true" eligibilityCriteria = "EGI_PPR_MONEO" producer = "PROD3" owner = "CRNOR">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-05-2011">
+                <label lang = "fr">Carte MONEO version 1</label>
+                <description lang = "fr">Carte de retrait version 1</description>
+                <pcElement code = "FCT_MONEO"/>
+                <grpElement code = "GRP_GST"/>
+                <option code = "OPT_MONEO" templateCode = "OPTION_MONEO" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Option Moneo</label>
+                    <optionElement code = "CSO_MONEO" defaultChoice = "true"/>
+                </option>
+            </versionedContent>
+            <versionedContent startDate = "01-06-2011">
+                <label lang = "fr">Carte MONEO version 2</label>
+                <description lang = "fr">Carte de retrait version 2</description>
+                <pcElement code = "FCT_MONEO"/>
+                <pcElement code = "UTIL_ANNUEL"/>
+                <grpElement code = "GRP_GST"/>
+                <option code = "OPT_MONEO" templateCode = "OPTION_MONEO" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Option Moneo</label>
+                    <optionElement code = "CSO_MONEO" defaultChoice = "true"/>
+                </option>
+                <option code = "OPT_VSL" templateCode = "OPTION_VSL" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Type de visuel</label>
+                    <description lang = "fr">Option sur les types de visuel</description>
+                    <optionElement code = "CSO_VSL" defaultChoice = "true"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_ASS_CARTE" action = "c">
+            <unversionedContent templateCode = "MOD_ASSUR" modifiable = "true" producer = "PROD2" owner = "CRBRP">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2012">
+                <label lang = "fr">Produit d'assurance sur cartes</label>
+                <description lang = "fr">version 1</description>
+                <pcElement code = "CAR_JST"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <option code = "OPT_ASSUR" templateCode = "OPTION_ASSUR" min = "1" max = "2" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 1</description>
+                    <optionElement code = "CSO_ASS_VH" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_AVY" defaultChoice = "true"/>
+                </option>
+                <option code = "OPT_MEDICAL" templateCode = "OPTION_MEDICAL" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 1</description>
+                    <optionElement code = "CSO_ASS_MED_AVG" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_MED_HG" defaultChoice = "false"/>
+                </option>
+                <option code = "OPT_NEIGE" templateCode = "OPTION_NEIGE" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 1</description>
+                    <optionElement code = "CSO_ASS_NEIGE" defaultChoice = "true"/>
+                </option>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2013" endDate = "31-12-2014">
+                <label lang = "fr">Produit d'assurance sur cartes</label>
+                <description lang = "fr">version 2</description>
+                <pcElement code = "CAR_JST"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <option code = "OPT_ASSUR" templateCode = "OPTION_ASSUR" min = "1" max = "2" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 2</description>
+                    <optionElement code = "CSO_ASS_VH" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_AVY" defaultChoice = "true"/>
+                </option>
+                <option code = "OPT_MEDICAL" templateCode = "OPTION_MEDICAL" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 2</description>
+                    <optionElement code = "CSO_ASS_MED_AVG" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_MED_HG" defaultChoice = "false"/>
+                </option>
+                <option code = "OPT_NEIGE" templateCode = "OPTION_NEIGE" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 2</description>
+                    <optionElement code = "CSO_ASS_NEIGE" defaultChoice = "true"/>
+                </option>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2015">
+                <label lang = "fr">Produit d'assurance sur cartes</label>
+                <description lang = "fr">version 3</description>
+                <pcElement code = "CAR_JST"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <option code = "OPT_ASSUR" templateCode = "OPTION_ASSUR" min = "1" max = "2" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 3</description>
+                    <optionElement code = "CSO_ASS_VH" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_AVY" defaultChoice = "true"/>
+                </option>
+                <option code = "OPT_MEDICAL" templateCode = "OPTION_MEDICAL" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 3</description>
+                    <optionElement code = "CSO_ASS_MED_AVG" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_MED_HG" defaultChoice = "false"/>
+                </option>
+                <option code = "OPT_NEIGE" templateCode = "OPTION_NEIGE" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance carte</label>
+                    <description lang = "fr">version 3</description>
+                    <optionElement code = "CSO_ASS_NEIGE" defaultChoice = "true"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_ASS_HAB" action = "c">
+            <unversionedContent templateCode = "MOD_ASSUR" modifiable = "false" producer = "PROD4" owner = "CRNOR"/>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2012">
+                <label lang = "fr">Produit d'assurance habitation</label>
+                <description lang = "fr">version 1</description>
+                <pcElement code = "CAR_JST_DOM"/>
+                <option code = "OPT_HAB" templateCode = "OPTION_HAB" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance</label>
+                    <description lang = "fr">version 1</description>
+                    <optionElement code = "CSO_ASS_HAB_AVG" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_HAB_HG" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2013" endDate = "31-12-2013">
+                <label lang = "fr">Produit d'assurance habitation</label>
+                <description lang = "fr">version 2</description>
+                <pcElement code = "CAR_JST_DOM"/>
+                <option code = "OPT_HAB" templateCode = "OPTION_HAB" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance</label>
+                    <description lang = "fr">version 2</description>
+                    <optionElement code = "CSO_ASS_HAB_AVG" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_HAB_HG" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2014">
+                <label lang = "fr">Produit d'assurance habitation</label>
+                <description lang = "fr">version 3</description>
+                <pcElement code = "CAR_JST_DOM"/>
+                <option code = "OPT_HAB" templateCode = "OPTION_HAB" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance</label>
+                    <description lang = "fr">version 3</description>
+                    <optionElement code = "CSO_ASS_HAB_AVG" defaultChoice = "true"/>
+                    <optionElement code = "CSO_ASS_HAB_HG" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_ASS_JURIDIQUE" action = "c">
+            <unversionedContent templateCode = "MOD_ASSUR" modifiable = "true" producer = "PROD1" owner = "CRBRP">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2011">
+                <label lang = "fr">Produit d'assurance juridique</label>
+                <description lang = "fr">version 1</description>
+                <pcElement code = "CAR_JST_DOM"/>
+                <option code = "OPT_JUR" templateCode = "OPTION_JURID" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance</label>
+                    <description lang = "fr">version 1</description>
+                    <optionElement code = "CSO_ASS_JUR" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2012" endDate = "06-05-2015">
+                <label lang = "fr">Produit d'assurance juridique</label>
+                <description lang = "fr">version 2</description>
+                <pcElement code = "CAR_JST_DOM"/>
+                <option code = "OPT_JUR" templateCode = "OPTION_JURID" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance</label>
+                    <description lang = "fr">version 2</description>
+                    <optionElement code = "CSO_ASS_JUR" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+            <versionedContent startDate = "07-05-2015">
+                <label lang = "fr">Produit d'assurance juridique</label>
+                <description lang = "fr">version 3</description>
+                <pcElement code = "CAR_JST_DOM"/>
+                <option code = "OPT_JUR" templateCode = "OPTION_JURID" min = "1" max = "1" presence = "O">
+                    <label lang = "fr">Option assurance</label>
+                    <description lang = "fr">version 3</description>
+                    <optionElement code = "CSO_ASS_JUR" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_ASS_DOM_OUVRAGE" action = "c">
+            <unversionedContent templateCode = "MOD_ASSUR" modifiable = "true" producer = "PROD3" owner = "CRNOR">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-12-2011">
+                <label lang = "fr">Produit d'assurance construction</label>
+                <description lang = "fr">version 1</description>
+                <pcElement code = "CAR_JST_DOM"/>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2012" endDate = "31-12-2015">
+                <label lang = "fr">Produit d'assurance construction</label>
+                <description lang = "fr">version 2</description>
+                <pcElement code = "CAR_JST_DOM"/>
+            </versionedContent>
+            <versionedContent startDate = "01-01-2016">
+                <label lang = "fr">Produit d'assurance construction</label>
+                <description lang = "fr">version 3</description>
+                <pcElement code = "CAR_JST_DOM"/>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_PEL" action = "c">
+            <unversionedContent templateCode = "MPR_EPA" modifiable = "true" producer = "PROD2" owner = "COPNF">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+                <productRelation startDate = "01-01-2011" relation = "NEEDS" productCode = "PPR_CPT_COURANT"/>
+                <productRelation startDate = "01-01-2011" relation = "EXCLU" productCode = "PPR_PEL"/>
+                <productRelation startDate = "01-01-2011" relation = "NEEDS" productCode = "PPR_CAT"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Produit d'épargne</label>
+                <description lang = "fr">Produit PEL</description>
+                <pcElement code = "CAR_FCT_PEL"/>
+                <pcElement code = "VERS_PONCT"/>
+                <pcElement code = "VERS_MENSUEL"/>
+                <pcElement code = "GAR_RISK_PEL"/>
+                <option code = "OPT_DYN_PEL" templateCode = "OPTION_PEL" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Option PEL</label>
+                    <optionElement code = "CSO_DYN_PEL_PLAC" defaultChoice = "false"/>
+                    <optionElement code = "CSO_DYN_PEL_PRET" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_CPT_COURANT" action = "c">
+            <unversionedContent templateCode = "MPR_CPT" modifiable = "true" producer = "PROD4" owner = "CRNOR">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Produit compte courant rémunéré</label>
+                <pcElement code = "CAR_FCT_CPT"/>
+                <option code = "OPT_LIMITE" templateCode = "OPTION_LIMITE" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Option compte courant</label>
+                    <description lang = "fr">positionner une limite de découvert autorisé</description>
+                    <optionElement code = "CSO_LIM_MEDIUM" defaultChoice = "false"/>
+                    <optionElement code = "CSO_LIM_STAR" defaultChoice = "true"/>
+                    <optionElement code = "CSO_LIM_PLATINIUM" defaultChoice = "false"/>
+                    <optionElement code = "CSO_LIM_GOLD" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_CAT" action = "c">
+            <unversionedContent templateCode = "MPR_CAT" modifiable = "false" producer = "PROD4" owner = "CRPAC">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Produit compte à terme</label>
+                <description lang = "fr">Utilisation des DCP et DCO</description>
+                <pcElement code = "CAR_FCT_CAT"/>
+            </versionedContent>
+        </producerProduct>
+        <producerProduct code = "PPR_ASS_VIE" action = "c">
+            <unversionedContent templateCode = "MPR_ASV" modifiable = "true" producer = "PROD4" owner = "CRBRP">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false" hasExternalEligibility = "false"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Produit d'assurance vie</label>
+                <pcElement code = "CAR_FCT_ASS_VIE"/>
+                <pcElement code = "CAR_VERS_TRIMESTRIEL"/>
+                <pcElement code = "CAR_VERS_ANNUEL"/>
+                <pcElement code = "CAR_VERS_MENSUEL"/>
+                <pcElement code = "CAR_VERS_PONCT"/>
+                <option code = "OPT_CPTE" templateCode = "OPTION_COMPTE" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Option compte garanti</label>
+                    <optionElement code = "CSO_CPTE_GARANTI" defaultChoice = "false"/>
+                </option>
+                <option code = "OPT_FOND" templateCode = "OPTION_FOND" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Option investissement sur fonds</label>
+                    <optionElement code = "CSO_FOND_DYN" defaultChoice = "false"/>
+                    <optionElement code = "CSO_FOND_PRUDENT" defaultChoice = "false"/>
+                    <optionElement code = "CSO_FOND_MONDE" defaultChoice = "false"/>
+                </option>
+                <option code = "OPT_SORTIE_RENTE" templateCode = "OPTION_RENTE" min = "1" max = "1" presence = "M">
+                    <label lang = "fr">Option sortie rente de l'ASV</label>
+                    <optionElement code = "CSO_RENTE_VIE" defaultChoice = "false"/>
+                </option>
+            </versionedContent>
+        </producerProduct>
+    </producerProductsList>
+    <additionalPropertiesList>
+        <additionalProperties code = "DCP_PCM_CAT" action = "c">
+            <unversionedContent templateCode = "ADTL_PROP_TMPL_PCM"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Données complémentaires sur CAT - PCM</label>
+                <description lang = "fr">Spécifique au CAT-12-326</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "1000" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </additionalProperties>
+        <additionalProperties code = "DCP_PCM_CARTE" action = "c">
+            <unversionedContent templateCode = "ADTL_PROP_TMPL_PCM"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Données complémentaires sur CARTE</label>
+                <description lang = "fr">Spécifique au CAT-12-326</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "1000" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </additionalProperties>
+        <additionalProperties code = "DCP_PCM_ASS_CARTE" action = "c">
+            <unversionedContent templateCode = "ADTL_PROP_TMPL_PCM"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Données complémentaires sur ASS_CARTE</label>
+                <description lang = "fr">----</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "1000" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </additionalProperties>
+        <additionalProperties code = "DCP_PCM_MONEO" action = "c">
+            <unversionedContent templateCode = "ADTL_PROP_TMPL_PCM"/>
+            <versionedContent startDate = "01-01-2011" endDate = "31-07-2011">
+                <label lang = "fr">Données complémentaires sur MONEO- PCM version 1</label>
+                <description lang = "fr">Spécifique au MONEO version 1</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "1000" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-08-2011">
+                <label lang = "fr">Données complémentaires sur MONEO- PCM version 2</label>
+                <description lang = "fr">Spécifique au MONEO version 2</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "900" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </additionalProperties>
+        <additionalProperties code = "DCO_OFF_CAT" action = "c">
+            <unversionedContent templateCode = "ADTL_PROP_TMPL_OFF"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Données complémentaires sur CAT - Offre</label>
+                <description lang = "fr">Spécifique au CAT-12-326</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "1000" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </additionalProperties>
+        <additionalProperties code = "DCO_OFF_MONEO" action = "c">
+            <unversionedContent templateCode = "ADTL_PROP_TMPL_OFF"/>
+            <versionedContent startDate = "01-01-2011" endDate = "30-09-2011">
+                <label lang = "fr">Données complémentaires sur MONEO - Offre ver 1</label>
+                <description lang = "fr">Spécifique au MONEO version 1</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "800" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+            <versionedContent startDate = "01-10-2011">
+                <label lang = "fr">Données complémentaires sur MONEO - Offre ver 2</label>
+                <description lang = "fr">Spécifique au MONEO version 2</description>
+                <inputValue code = "CONDITION" value = "Avoir un DAV"/>
+                <amount code = "MNT_MAX_OPE_AMT" value = "700" currency = "EUR" min = "100" max = "2000"/>
+                <listOfChoices code = "TYPE_SIGNATURE_CD" isMultiple = "false" isFiltered = "true">
+                    <choice default = "true">
+                        <keyValue code = "TYPE_SIGN_COD" value = "1"/>
+                    </choice>
+                </listOfChoices>
+            </versionedContent>
+        </additionalProperties>
+    </additionalPropertiesList>
+    <distributionActsList>
+        <distributionAct code = "SOUSCRIPTION" action = "c">
+            <unversionedContent templateCode = "ACT_SOUSCRIPTION"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de souscription</label>
+                <pcElement code = "ACTE_TIERS"/>
+                <pcElement code = "ACTE_MOY"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <grpElement code = "LST_DOCUMENT"/>
+            </versionedContent>
+        </distributionAct>
+        <distributionAct code = "RESILIATION" action = "c">
+            <unversionedContent templateCode = "ACT_APRES_VENTE"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de résiliation</label>
+                <description lang = "fr">Acte d'après vente</description>
+                <pcElement code = "ACTE_TIERS"/>
+                <pcElement code = "ACTE_MOY"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <grpElement code = "LST_DOCUMENT"/>
+            </versionedContent>
+        </distributionAct>
+        <distributionAct code = "MONTEE_GAMME" action = "c">
+            <unversionedContent templateCode = "ACT_APRES_VENTE"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de montée de gamme</label>
+                <description lang = "fr">Acte d'après vente</description>
+                <pcElement code = "ACTE_TIERS"/>
+                <pcElement code = "ACTE_MOY"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <grpElement code = "LST_DOCUMENT"/>
+            </versionedContent>
+        </distributionAct>
+        <distributionAct code = "RENOUVELLEMENT" action = "c">
+            <unversionedContent templateCode = "ACT_APRES_VENTE"/>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Acte de renouvellement</label>
+                <description lang = "fr">Acte d'après vente</description>
+                <pcElement code = "ACTE_TIERS"/>
+                <pcElement code = "ACTE_MOY"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <grpElement code = "LST_DOCUMENT"/>
+            </versionedContent>
+        </distributionAct>
+        <distributionAct code = "SOUSCRIPTION_MONEO" action = "c">
+            <unversionedContent templateCode = "ACT_SOUSCRIPTION"/>
+            <versionedContent startDate = "01-01-2011" endDate = "31-03-2011">
+                <label lang = "fr">souscription moneo - v1</label>
+                <pcElement code = "ACTE_TIERS"/>
+                <pcElement code = "ACTE_MOY"/>
+                <grpElement code = "LST_DOCUMENT"/>
+            </versionedContent>
+            <versionedContent startDate = "01-04-2011">
+                <label lang = "fr">souscription moneo - v2</label>
+                <pcElement code = "ACTE_TIERS"/>
+                <pcElement code = "ACTE_MOY"/>
+                <grpElement code = "LST_JUSTIFICATIF"/>
+                <grpElement code = "LST_DOCUMENT"/>
+            </versionedContent>
+        </distributionAct>
+    </distributionActsList>
+    <commercialProductsList>
+        <commercialProduct code = "PCM_CARTE_WORLD" action = "c">
+            <unversionedContent product = "PPR_CARTE_WORLD" lonelySale = "true" additionalProperties = "DCP_PCM_CARTE" owner = "CRIFR">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "14">
+                        <description lang = "fr">Eligibilité catalogue PCM_CARTE_WORLD</description>
+                    </internalEligibility>
+                </eligibilityRule>
+                <family family = "F0300" startDate = "01-01-2011" weight = "1"/>
+                <family family = "F0800" startDate = "01-01-2011" weight = "1"/>
+                <family family = "F0900" startDate = "01-01-2016" endDate = "01-01-2018"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <market market = "PRO" startDate = "01-01-2011" endDate = "01-01-2015"/>
+                <familyRelation family = "F0210" relation = "NEEDS" startDate = "01-01-2011"/>
+                <familyRelation family = "F0211" relation = "NEEDS" startDate = "01-01-2012"/>
+                <familyRelation family = "F0230" relation = "NEEDS" startDate = "01-01-2012"/>
+                <commercialProductRelation productCode = "PCM_CARTE_WORLD" startDate = "01-01-2011" relation = "EXCLU"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">CARTE WORLD</label>
+                <description lang = "fr">Carte commerciale WORLD</description>
+                <commercialName lang = "fr">CARTE WORLD</commercialName>
+                <overriddenCharacteristic code = "EGI_PPR_WORLD">
+                    <inputValue code = "PARTICULIER" defaultValue = "FALSE"/>
+                    <inputValue code = "AGE_CARTE" min = "18" max = "80"/>
+                    <inputValue code = "AGE_PAIEMENT" min = "25"/>
+                    <amount code = "REVENU_DDIF" value = "16500" currency = "EUR"/>
+                    <amount code = "CA_DDIF" currency = "EUR" min = "600000"/>
+                    <listOfChoices code = "CLASSIF_AUTORISEE" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "CLASSIF_COD" value = "PE"/>
+                        </choice>
+                        <choice>
+                            <keyValue code = "CLASSIF_COD" value = "ME"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenCharacteristic>
+                <overriddenCharacteristic code = "UTIL_MENSUEL">
+                    <label lang = "fr">app choix SCP_UTIL_MENSUEL</label>
+                    <amount code = "MNT_PLF_RET_AMT" value = "15000" currency = "EUR"/>
+                    <amount code = "MNT_MAX_OPE_AMT" value = "10000" currency = "EUR"/>
+                    <amount code = "MNT_PLF_KRT_AMT" value = "5000" currency = "EUR"/>
+                </overriddenCharacteristic>
+                <overriddenCharacteristic code = "UTIL_SEMESTRIEL">
+                    <label lang = "fr">surcharge sur PCM SCP_UTIL_SEMESTRIEL</label>
+                    <amount code = "MNT_PLF_KRT_AMT" currency = "EUR" min = "1500" max = "9500"/>
+                </overriddenCharacteristic>
+                <overriddenCharacteristic code = "UTIL_ANNUEL">
+                    <label lang = "fr">surcharge de PCM - SCP_UTIL_SEMESTRIEL</label>
+                    <amount code = "MNT_PLF_RET_AMT" value = "18000" currency = "EUR"/>
+                </overriddenCharacteristic>
+                <overriddenOption code = "OPT_DEBIT" presence = "M" max = "1">
+                    <commercialName lang = "fr">App. comm. de l'option dansle PCM</commercialName>
+                </overriddenOption>
+                <overriddenOptionChoice code = "CSO_DEBIT_DIFFERE" optionCode = "OPT_DEBIT" presence = "D">
+                    <commercialName lang = "fr">Option débit différé niveau commercial</commercialName>
+                    <eligibilityRule hasInternalEligibility = "true">
+                        <internalEligibility category = "14">
+                            <description lang = "fr">surcharge SCP_CSO_DEBIT_DIFFERE</description>
+                        </internalEligibility>
+                    </eligibilityRule>
+                    <inputValue code = "INFORMATION_TARIF" defaultValue = "Moins cher que gratuit"/>
+                </overriddenOptionChoice>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "EURO_COM" action = "c">
+            <unversionedContent product = "EURO" lonelySale = "true" owner = "CRAJM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "14"/>
+                </eligibilityRule>
+                <family family = "F0300" startDate = "01-01-2011" weight = "1"/>
+                <family family = "F0400" startDate = "01-01-2011" endDate = "01-01-2014" weight = "1"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <market market = "ENT" startDate = "01-01-2013" endDate = "01-01-2017"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">PCM pour l'éligibilité</label>
+                <commercialName lang = "fr">PCM_EURO</commercialName>
+                <overriddenCharacteristic code = "EGI_PPR_WORLD">
+                    <inputValue code = "PARTICULIER" defaultValue = "FALSE"/>
+                    <inputValue code = "AGE_CARTE" min = "18" max = "80"/>
+                    <inputValue code = "AGE_PAIEMENT" min = "25"/>
+                    <amount code = "REVENU_DDIF" value = "16500" currency = "EUR"/>
+                    <amount code = "CA_DDIF" currency = "EUR" min = "600000"/>
+                    <listOfChoices code = "CLASSIF_AUTORISEE" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "CLASSIF_COD" value = "PE"/>
+                        </choice>
+                        <choice>
+                            <keyValue code = "CLASSIF_COD" value = "ME"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenCharacteristic>
+                <overriddenOptionChoice code = "OPT_EURO_ASS_VH" optionCode = "LST_ASSUR_EURO">
+                    <commercialName lang = "fr">Assurance véhicule dommage</commercialName>
+                    <eligibilityRule hasInternalEligibility = "true">
+                        <internalEligibility category = "14"/>
+                    </eligibilityRule>
+                    <amount code = "MNT_PLF_ASS_VH_LOC_AMT" value = "1000" currency = "EUR"/>
+                    <listOfChoices code = "TYPE_ASS_CD" isMultiple = "true" isFiltered = "true">
+                        <choice selected = "true">
+                            <keyValue code = "TYPE_ASSUR_COD" value = "2"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenOptionChoice>
+                <overriddenOptionChoice code = "OPT_EURO_VSL" optionCode = "LST_VSL_EURO">
+                    <eligibilityRule hasInternalEligibility = "true">
+                        <internalEligibility category = "14"/>
+                    </eligibilityRule>
+                    <inputValue code = "ANC_CLIENT_AN" min = "3"/>
+                </overriddenOptionChoice>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_ASS_VIE" action = "c">
+            <unversionedContent product = "PPR_ASS_VIE" lonelySale = "true" owner = "CRNOR">
+                <family family = "F0900" startDate = "01-01-2011" endDate = "01-01-2014"/>
+                <family family = "F0111" startDate = "01-01-2011" weight = "8"/>
+                <market market = "ASS" startDate = "01-01-2011"/>
+                <market market = "AGR" startDate = "01-01-2011" endDate = "01-01-2014"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Assurance Vie Sopra</label>
+                <commercialName lang = "fr">ASSVIE_SOP</commercialName>
+                <overriddenOptionChoice code = "CSO_CPTE_GARANTI" optionCode = "OPT_CPTE">
+                    <listOfChoices code = "TYPE_ACTIF" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "TYPE_ACTIF_COD" value = "1"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenOptionChoice>
+                <overriddenOptionChoice code = "CSO_FOND_MONDE" optionCode = "OPT_FOND">
+                    <listOfChoices code = "TYPE_SUPPORT" isMultiple = "false" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "TYPE_SUP_COD" value = "2"/>
+                        </choice>
+                    </listOfChoices>
+                    <listOfChoices code = "TYPE_ACTIF" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "TYPE_ACTIF_COD" value = "1"/>
+						</choice>
+						<choice>
+                            <keyValue code = "TYPE_ACTIF_COD" value = "2"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenOptionChoice>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_MONEO" action = "c">
+            <unversionedContent product = "PPR_MONEO" lonelySale = "true" additionalProperties = "DCP_PCM_MONEO" owner = "CRPAC">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "14"/>
+                </eligibilityRule>
+                <family family = "F0210" startDate = "01-01-2011" weight = "10"/>
+                <family family = "F0110" startDate = "01-01-2011" endDate = "01-01-2014" weight = "8"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <market market = "ENT" startDate = "01-01-2011" endDate = "01-01-2014"/>
+                <familyRelation family = "F0220" relation = "EXCLU" startDate = "01-01-2011" endDate = "31-12-2011"/>
+                <commercialProductRelation productCode = "PCM_CARTE_WORLD" startDate = "01-01-2011" relation = "EXCLU"/>
+                <commercialProductRelation productCode = "PCM_CAT" startDate = "01-01-2011" relation = "NEEDS"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "30-06-2011">
+                <label lang = "fr">CARTE moneo version 1</label>
+                <description lang = "fr">Carte commerciale moneo version 1</description>
+                <commercialName lang = "fr">CARTE moneo</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "01-07-2011">
+                <label lang = "fr">CARTE moneo version 2</label>
+                <description lang = "fr">Carte commerciale moneo version 2</description>
+                <commercialName lang = "fr">CARTE moneo</commercialName>
+                <overriddenCharacteristic code = "EGI_PPR_MONEO">
+                    <inputValue code = "PARTICULIER" defaultValue = "FALSE"/>
+                    <inputValue code = "AGE_CARTE" min = "25" max = "80"/>
+                    <inputValue code = "AGE_PAIEMENT" min = "25"/>
+                    <amount code = "REVENU_DDIF" value = "16500" currency = "EUR"/>
+                    <amount code = "CA_DDIF" currency = "EUR" min = "600000"/>
+                    <listOfChoices code = "CLASSIF_AUTORISEE" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "CLASSIF_COD" value = "PE"/>
+                        </choice>
+                        <choice>
+                            <keyValue code = "CLASSIF_COD" value = "ME"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenCharacteristic>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_CAT" action = "c">
+            <unversionedContent product = "PPR_CAT" lonelySale = "true" additionalProperties = "DCP_PCM_CAT" owner = "COMMU">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true"/>
+                <family family = "F0210" startDate = "01-01-2011" weight = "10"/>
+                <family family = "F0110" startDate = "01-01-2011" endDate = "01-01-2014" weight = "8"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <market market = "ENT" startDate = "01-01-2011" endDate = "01-01-2014"/>
+                <familyRelation family = "F0111" relation = "NEEDS" startDate = "01-01-2011" endDate = "31-12-2014"/>
+                <commercialProductRelation productCode = "PCM_CARTE_WORLD" startDate = "01-01-2011" endDate = "31-12-2011" relation = "EXCLU"/>
+                <commercialProductRelation productCode = "PCM_CAT" startDate = "01-01-2011" endDate = "31-12-2011" relation = "EXCLU"/>
+                <commercialProductRelation productCode = "PCM_ASS_CARTE" startDate = "01-01-2011" endDate = "31-12-2011" relation = "EXCLU"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Compte à terme - 1 an - 3,26 Garanti</label>
+                <commercialName lang = "fr">CAT-12-326</commercialName>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_ASS_CARTE" action = "c">
+            <unversionedContent product = "PPR_ASS_CARTE" lonelySale = "true" owner = "CRNOR">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+                <family family = "F0100" startDate = "01-01-2011" endDate = "01-01-2014" weight = "2"/>
+                <family family = "F0110" startDate = "01-01-2011" endDate = "01-01-2015" weight = "8"/>
+                <family family = "F0111" startDate = "01-01-2011" endDate = "01-01-2016" weight = "10"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <market market = "PRO" startDate = "01-01-2011" endDate = "01-01-2016"/>
+                <familyRelation family = "F0210" relation = "NEEDS" startDate = "01-01-2011"/>
+                <familyRelation family = "F0211" relation = "EXCLU" startDate = "01-01-2011"/>
+                <commercialProductRelation productCode = "PCM_CARTE_WORLD" startDate = "01-01-2011" endDate = "31-12-2014" relation = "NEEDS"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "01-01-2015">
+                <label lang = "fr">Produit d'assurance sur carte bancaire</label>
+                <description lang = "fr">version 1</description>
+                <commercialName lang = "fr">Assurance carte des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "02-01-2015" endDate = "03-05-2018">
+                <label lang = "fr">Produit d'assurance sur carte bancaire</label>
+                <description lang = "fr">version 2</description>
+                <commercialName lang = "fr">Assurance carte des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "04-05-2018">
+                <label lang = "fr">Produit d'assurance sur carte bancaire</label>
+                <description lang = "fr">version 3</description>
+                <commercialName lang = "fr">Assurance carte des bienheureux</commercialName>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_ASS_HAB" action = "c">
+            <unversionedContent product = "PPR_ASS_HAB" lonelySale = "true" owner = "CRBRP">
+                <family family = "F0210" startDate = "01-01-2011" endDate = "01-01-2014" weight = "2"/>
+                <family family = "F0110" startDate = "01-01-2011" endDate = "01-01-2015" weight = "6"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <market market = "ENT" startDate = "01-01-2011"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "01-01-2016">
+                <label lang = "fr">Produit d'assurance habitation</label>
+                <description lang = "fr">version 1</description>
+                <commercialName lang = "fr">Assurance habitation des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "02-01-2016" endDate = "03-05-2018">
+                <label lang = "fr">Produit d'assurance sur habitation</label>
+                <description lang = "fr">version 2</description>
+                <commercialName lang = "fr">Assurance habitation  des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "04-05-2018">
+                <label lang = "fr">Produit d'assurance habitation +</label>
+                <description lang = "fr">version 3</description>
+                <commercialName lang = "fr">Assurance habitation des bienheureux</commercialName>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_ASS_JURIDIQUE" action = "c">
+            <unversionedContent product = "PPR_ASS_JURIDIQUE" lonelySale = "true" owner = "COPNF">
+                <family family = "F0100" startDate = "01-01-2011" endDate = "01-01-2014" weight = "6"/>
+                <family family = "F0110" startDate = "01-01-2011" weight = "5"/>
+                <family family = "F0111" startDate = "01-01-2011" weight = "8"/>
+                <market market = "PAR" startDate = "01-01-2011" endDate = "01-01-2016"/>
+                <market market = "PRO" startDate = "01-01-2011"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "01-01-2016">
+                <label lang = "fr">Produit d'assurance juridique</label>
+                <description lang = "fr">version 1</description>
+                <commercialName lang = "fr">Assurance juridique des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "02-01-2016" endDate = "03-05-2019">
+                <label lang = "fr">Produit d'assurance  juridique *</label>
+                <description lang = "fr">version 2</description>
+                <commercialName lang = "fr">Assurance juridique  des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "04-05-2019">
+                <label lang = "fr">Produit d'assurance juridique +++</label>
+                <description lang = "fr">version 3</description>
+                <commercialName lang = "fr">Assurance juridique des bienheureux</commercialName>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_ASS_DOM_OUVRAGE" action = "c">
+            <unversionedContent product = "PPR_ASS_DOM_OUVRAGE" lonelySale = "true" owner = "CRNOR">
+                <family family = "F0100" startDate = "01-01-2011" endDate = "01-01-2014" weight = "2"/>
+                <family family = "F0110" startDate = "01-01-2011" endDate = "01-01-2015"/>
+                <family family = "F0111" startDate = "01-01-2011" endDate = "01-01-2016" weight = "10"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <market market = "PRO" startDate = "01-01-2011"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "01-01-2015">
+                <label lang = "fr">Produit d'assurance dommage ouvrage</label>
+                <description lang = "fr">version 1</description>
+                <commercialName lang = "fr">Assurance dommage ouvrage des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "02-01-2015" endDate = "03-05-2019">
+                <label lang = "fr">Produit d'assurance  dommage ouvrage *</label>
+                <description lang = "fr">version 2</description>
+                <commercialName lang = "fr">Assurance dommage ouvrage  des bienheureux</commercialName>
+            </versionedContent>
+            <versionedContent startDate = "04-05-2019">
+                <label lang = "fr">Produit d'assurance dommage ouvrage +++</label>
+                <description lang = "fr">version 3</description>
+                <commercialName lang = "fr">Assurance dommage ouvrage des bienheureux</commercialName>
+            </versionedContent>
+        </commercialProduct>
+        <commercialProduct code = "PCM_DAV_COM" action = "c">
+            <unversionedContent product = "PPR_CPT_COURANT" lonelySale = "true" owner = "CRAJM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "14">
+                        <description lang = "fr">Eligibilité DAV_COM</description>
+                    </internalEligibility>
+                </eligibilityRule>
+                <familyRelation family = "F0210" relation = "NEEDS" startDate = "01-01-2011" endDate = "31-12-2014"/>
+                <familyRelation family = "F0211" relation = "NEEDS" startDate = "01-01-2011"/>
+                <familyRelation family = "F0230" relation = "EXCLU" startDate = "01-01-2011" endDate = "31-12-2014"/>
+                <familyRelation family = "F0240" relation = "EXCLU" startDate = "01-01-2011"/>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">compte courant rémunéré</label>
+                <description lang = "fr">compte courant rémunéré</description>
+                <commercialName lang = "fr">compte courant</commercialName>
+            </versionedContent>
+        </commercialProduct>
+    </commercialProductsList>
+    <offersList>
+        <offer code = "OFF_CARTE_WORLD" action = "c">
+            <unversionedContent inseparable = "true" owner = "CRAJM">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "12"/>
+                </eligibilityRule>
+                <family family = "F0241" startDate = "01-01-2011" weight = "10"/>
+                <family family = "F0800" startDate = "01-01-2011" weight = "5"/>
+                <family family = "F0900" startDate = "01-01-2011" weight = "5"/>
+                <market market = "PAR" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM02" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM05" startDate = "01-01-2011" relevance = "1"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "6"/>
+                    <commercialName lang = "fr">APP comm lien acte offre - Souscription</commercialName>
+                </linkedActs>
+                <linkedActs actCode = "RESILIATION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "6"/>
+                    <commercialName lang = "fr">APP comm lien acte offre - Resiliation</commercialName>
+                </linkedActs>
+                <linkedActs actCode = "RENOUVELLEMENT" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0005" relevance = "10"/>
+                    <need need = "B0006" relevance = "6"/>
+                    <commercialName lang = "fr">APP comm lien acte offre - Resiliation</commercialName>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">CARTE WORLD</label>
+                <description lang = "fr">Carte de retait par Sopra Group</description>
+                <commercialName lang = "fr">App comm offre</commercialName>
+                <containedProduct productCode = "PCM_CARTE_WORLD" presence = "M"/>
+                <overriddenCharacteristic commercialProductCode = "PCM_CARTE_WORLD" code = "UTIL_MENSUEL">
+                    <amount code = "MNT_PLF_RET_AMT" value = "11000" currency = "EUR"/>
+                </overriddenCharacteristic>
+                <overriddenCharacteristic commercialProductCode = "PCM_CARTE_WORLD" code = "UTIL_TRIMESTRIEL">
+                    <amount code = "MNT_PLF_RET_AMT" value = "35000" currency = "EUR"/>
+                    <amount code = "MNT_MAX_OPE_AMT" value = "10000" currency = "EUR"/>
+                    <amount code = "MNT_PLF_KRT_AMT" value = "5000" currency = "EUR"/>
+                </overriddenCharacteristic>
+                <overriddenCharacteristic commercialProductCode = "PCM_CARTE_WORLD" code = "UTIL_SEMESTRIEL">
+                    <amount code = "MNT_PLF_KRT_AMT" value = "5000" currency = "EUR"/>
+                </overriddenCharacteristic>
+                <overriddenCharacteristic commercialProductCode = "PCM_CARTE_WORLD" code = "UTIL_ANNUEL">
+                    <amount code = "MNT_MAX_OPE_AMT" value = "10000" currency = "EUR"/>
+                    <amount code = "MNT_PLF_KRT_AMT" currency = "EUR" min = "1500" max = "9500"/>
+                </overriddenCharacteristic>
+                <overriddenOption commercialProductCode = "PCM_CARTE_WORLD" code = "OPT_VSL" min = "1" max = "1" presence = "M">
+                    <commercialName lang = "fr">App comm de l'option OPT_VLS sur l'offre</commercialName>
+                </overriddenOption>
+                <overriddenOptionChoice commercialProductCode = "PCM_CARTE_WORLD" code = "CSO_VSL" optionCode = "OPT_VSL" presence = "D">
+                    <commercialName lang = "fr">App comm du choix sur option CSO_VLS sur l'offre</commercialName>
+                    <inputValue code = "INFORMATION_TARIF" defaultValue = "Gratuit, oui, oui, vraiment !"/>
+                </overriddenOptionChoice>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_EURO" action = "c">
+            <unversionedContent inseparable = "false" owner = "CRIFR">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "14">
+                        <description lang = "fr">Description eligibilité offre euro</description>
+                    </internalEligibility>
+                </eligibilityRule>
+                <family family = "F0240" startDate = "01-01-2011" endDate = "15-08-2020" weight = "8"/>
+                <family family = "F0800" startDate = "01-01-2011" weight = "10"/>
+                <family family = "F0900" startDate = "01-01-2011" weight = "12"/>
+                <market market = "PAR" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM01" startDate = "01-01-2011" relevance = "5"/>
+                <segment segment = "SM02" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM03" startDate = "01-01-2011" relevance = "3"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011">
+                        <internalEligibility category = "14">
+                            <description lang = "fr">Eligibilité  couple acte offre OFF_EURO SOUSCRIPTION</description>
+                        </internalEligibility>
+                    </eligibilityRule>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+                <linkedActs actCode = "RESILIATION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+                <linkedActs actCode = "MONTEE_GAMME" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011">
+                        <internalEligibility category = "14">
+                            <description lang = "fr">Eligibilité  couple acte offre OFF_EURO MONTEE_GAMME</description>
+                        </internalEligibility>
+                    </eligibilityRule>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">offre euro pour eligibilité</label>
+                <description lang = "fr">premiere offre euro</description>
+                <commercialName lang = "fr">offre euro V1</commercialName>
+                <containedProduct productCode = "EURO_COM" presence = "M"/>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_MULTI_P1" action = "c">
+            <unversionedContent inseparable = "false" owner = "CRAJM">
+                <family family = "F0240" startDate = "01-01-2011" endDate = "15-08-2020" weight = "8"/>
+                <family family = "F0800" startDate = "01-01-2011" weight = "10"/>
+                <family family = "F0900" startDate = "01-01-2011" weight = "12"/>
+                <market market = "PAR" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM01" startDate = "01-01-2011" relevance = "5"/>
+                <segment segment = "SM02" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM03" startDate = "01-01-2011" relevance = "3"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011">
+                        <internalEligibility category = "14"/>
+                    </eligibilityRule>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+                <linkedActs actCode = "RESILIATION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Offre multiproduit P1</label>
+                <containedProduct productCode = "PCM_DAV_COM" presence = "M"/>
+                <containedOption optionCode = "LST_ASSUR_EURO" commercialProductCode = "EURO_COM" presence = "O"/>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_MULTI_P2" action = "c">
+            <unversionedContent inseparable = "false" owner = "COMMU">
+                <family family = "F0240" startDate = "01-01-2011" endDate = "15-08-2020" weight = "8"/>
+                <family family = "F0800" startDate = "01-01-2011" weight = "10"/>
+                <family family = "F0900" startDate = "01-01-2011" weight = "12"/>
+                <market market = "PAR" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM01" startDate = "01-01-2011" relevance = "5"/>
+                <segment segment = "SM02" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM03" startDate = "01-01-2011" relevance = "3"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011">
+                        <internalEligibility category = "14">
+                            <description lang = "fr">Eligibilité  couple acte offre OFF_DAV_LDC SOUSCRIPTION</description>
+                        </internalEligibility>
+                    </eligibilityRule>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+                <linkedActs actCode = "RESILIATION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Offre multiproduit P2</label>
+                <containedProduct productCode = "PCM_CARTE_WORLD" presence = "M"/>
+                <containedGroupOfChoices code = "LDC_ASSURANCE" min = "1" presence = "O">
+                    <label lang = "fr">LDC ASS</label>
+                    <description lang = "fr">LDC ASS</description>
+                    <commercialName lang = "fr">LDC ASS</commercialName>
+                    <containedProduct productCode = "PCM_ASS_CARTE" presence = "O"/>
+                </containedGroupOfChoices>
+                <containedGroupOfChoices code = "LDC_DAV" min = "1" presence = "M">
+                    <label lang = "fr">LDC_DAV</label>
+                    <description lang = "fr">LDC_DAV</description>
+                    <commercialName lang = "fr">LDC_DAV</commercialName>
+                    <containedProduct productCode = "PCM_DAV_COM" presence = "M"/>
+                    <containedOption optionCode = "LST_ASSUR_EURO" commercialProductCode = "EURO_COM" presence = "O"/>
+                </containedGroupOfChoices>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_DAV_LDC" action = "c">
+            <unversionedContent inseparable = "false" owner = "CRPAC">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "14">
+                        <description lang = "fr">Description eligibilité offre DAV avec liste de choix</description>
+                    </internalEligibility>
+                </eligibilityRule>
+                <family family = "F0240" startDate = "01-01-2011" endDate = "15-08-2020" weight = "8"/>
+                <family family = "F0800" startDate = "01-01-2011" weight = "10"/>
+                <family family = "F0900" startDate = "01-01-2011" weight = "12"/>
+                <market market = "PAR" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM01" startDate = "01-01-2011" relevance = "5"/>
+                <segment segment = "SM02" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM03" startDate = "01-01-2011" relevance = "3"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011">
+                        <internalEligibility category = "14">
+                            <description lang = "fr">Eligibilité  couple acte offre OFF_DAV_LDC SOUSCRIPTION</description>
+                        </internalEligibility>
+                    </eligibilityRule>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+                <linkedActs actCode = "RESILIATION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+                <linkedActs actCode = "MONTEE_GAMME" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011">
+                        <internalEligibility category = "14">
+                            <description lang = "fr">Eligibilité  couple acte offre OFF_DAV_LDC MONTEE_GAMME</description>
+                        </internalEligibility>
+                    </eligibilityRule>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "5"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">offre dav LDC pour eligibilité</label>
+                <description lang = "fr">premiere offre euro dav liste de choix</description>
+                <commercialName lang = "fr">offre dav V1</commercialName>
+                <containedGroupOfChoices code = "LDC_DAV" min = "1" presence = "M">
+                    <label lang = "fr">Libellé LDC sur OFF_DAV_LDC</label>
+                    <description lang = "fr">Description LDC sur OFF_DAV_LDC</description>
+                    <commercialName lang = "fr">APP Comm LDC sur OFF_DAV_LDC</commercialName>
+                    <containedProduct productCode = "PCM_DAV_COM" presence = "O"/>
+                    <containedOption optionCode = "LST_ASSUR_EURO" commercialProductCode = "EURO_COM" presence = "O"/>
+                    <containedOption optionCode = "LST_VSL_EURO" commercialProductCode = "EURO_COM" presence = "O"/>
+                </containedGroupOfChoices>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_MONEO" action = "c">
+            <unversionedContent inseparable = "true" additionalProperties = "DCO_OFF_MONEO" owner = "COMMU">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "true">
+                    <internalEligibility category = "12"/>
+                </eligibilityRule>
+                <linkedActs actCode = "SOUSCRIPTION_MONEO" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011"/>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011" endDate = "31-08-2011">
+                <label lang = "fr">CARTE MONEO version 1</label>
+                <description lang = "fr">Carte de retait par Sopra Group</description>
+                <commercialName lang = "fr">App comm offre</commercialName>
+                <containedProduct productCode = "PCM_MONEO" presence = "M"/>
+                <containedProduct productCode = "PCM_ASS_CARTE" presence = "D"/>
+            </versionedContent>
+            <versionedContent startDate = "01-09-2011">
+                <label lang = "fr">CARTE MONEO version 2</label>
+                <description lang = "fr">Carte de retait par Sopra Group</description>
+                <commercialName lang = "fr">App comm offre</commercialName>
+                <containedGroupOfChoices code = "LST_MONEO" min = "1" max = "2" presence = "M">
+                    <containedProduct productCode = "PCM_MONEO" presence = "M"/>
+                    <containedProduct productCode = "PCM_ASS_CARTE" presence = "O"/>
+                </containedGroupOfChoices>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_CAT" action = "c">
+            <unversionedContent inseparable = "true" additionalProperties = "DCO_OFF_CAT" owner = "CRBRP">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+                <family family = "F0210" startDate = "01-01-2011" weight = "12"/>
+                <market market = "PAR" startDate = "01-01-2011" relevance = "5"/>
+                <market market = "PRO" startDate = "01-01-2011"/>
+                <segment segment = "SM02" startDate = "01-01-2011" relevance = "5"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011"/>
+                    <need need = "B0005" relevance = "3"/>
+                    <need need = "B0006" relevance = "1"/>
+                    <commercialName lang = "fr">app comm - OFF_CAT couple acte offre</commercialName>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Offre de compte à terme performant</label>
+                <commercialName lang = "fr">Compte Extenso - CAT</commercialName>
+                <containedProduct productCode = "PCM_CAT" presence = "M"/>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_ASS_CARTE" action = "c">
+            <unversionedContent inseparable = "false" owner = "COMMU">
+                <eligibilityRule startDate = "01-01-2011" hasInternalEligibility = "false"/>
+                <market market = "PAR" startDate = "01-01-2011"/>
+                <segment segment = "SM01" startDate = "01-01-2011"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0003" relevance = "8"/>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Offre d'assurance sur carte bancaire</label>
+                <commercialName lang = "fr">app comm ASS_CARTE - offre</commercialName>
+                <containedGroupOfChoices code = "LST_ASS_CARTE" min = "2" max = "2" presence = "M">
+                    <label lang = "fr">Pack Carte Optimo</label>
+                    <commercialName lang = "fr">app comm ASS_CARTE - Liste de choix</commercialName>
+                    <containedProduct productCode = "PCM_ASS_CARTE" presence = "M"/>
+                    <containedProduct productCode = "PCM_CARTE_WORLD" presence = "M"/>
+                </containedGroupOfChoices>
+            </versionedContent>
+        </offer>
+        <offer code = "OFF_ASS_VIE" action = "c">
+            <unversionedContent inseparable = "true" owner = "CRIFR">
+                <family family = "F0900" startDate = "01-01-2011" weight = "10"/>
+                <market market = "PAR" startDate = "01-01-2011" relevance = "10"/>
+                <segment segment = "SM02" startDate = "01-01-2011" relevance = "10"/>
+                <linkedActs actCode = "SOUSCRIPTION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "true" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "6"/>
+                </linkedActs>
+                <linkedActs actCode = "RESILIATION" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0001" relevance = "10"/>
+                    <need need = "B0002" relevance = "6"/>
+                </linkedActs>
+                <linkedActs actCode = "RENOUVELLEMENT" startDate = "01-01-2011">
+                    <eligibilityRule hasInternalEligibility = "false" startDate = "01-01-2011"/>
+                    <need need = "B0005" relevance = "10"/>
+                    <need need = "B0006" relevance = "6"/>
+                </linkedActs>
+            </unversionedContent>
+            <versionedContent startDate = "01-01-2011">
+                <label lang = "fr">Offre d'Assurance Vie de Sopra</label>
+                <commercialName lang = "fr">ASS_VIE_OFF</commercialName>
+                <containedProduct productCode = "PCM_ASS_VIE" presence = "M"/>
+                <overriddenOptionChoice commercialProductCode = "PCM_ASS_VIE" code = "CSO_FOND_DYN" optionCode = "OPT_FOND">
+                    <listOfChoices code = "TYPE_SECTEUR" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "TYPE_SEC_COD" value = "1"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenOptionChoice>
+                <overriddenOptionChoice commercialProductCode = "PCM_ASS_VIE" code = "CSO_FOND_PRUDENT" optionCode = "OPT_FOND">
+                    <listOfChoices code = "TYPE_SUPPORT" isMultiple = "false" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "TYPE_SUP_COD" value = "2"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenOptionChoice>
+                <overriddenOptionChoice commercialProductCode = "PCM_ASS_VIE" code = "CSO_FOND_MONDE" optionCode = "OPT_FOND">
+                    <listOfChoices code = "TYPE_ACTIF" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "TYPE_ACTIF_COD" value = "1"/>
+                        </choice>
+                    </listOfChoices>
+                    <listOfChoices code = "TYPE_SECTEUR" isMultiple = "true" isFiltered = "true">
+                        <choice>
+                            <keyValue code = "TYPE_SEC_COD" value = "1"/>
+                        </choice>
+                        <choice>
+                            <keyValue code = "TYPE_SEC_COD" value = "2"/>
+                        </choice>
+                    </listOfChoices>
+                </overriddenOptionChoice>
+            </versionedContent>
+        </offer>
+    </offersList>
+    <marketedElementList>
+        <marketedElement actCode = "SOUSCRIPTION" offerCode = "OFF_CARTE_WORLD" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRPAC"/>
+            <distributor distributor = "CRNOR"/>
+        </marketedElement>
+        <marketedElement actCode = "SOUSCRIPTION_MONEO" offerCode = "OFF_MONEO" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRPAC"/>
+            <commercialName lang = "fr">app comm MEM : ACT_SOUSCRIPTION - OFF_MONeO</commercialName>
+        </marketedElement>
+        <marketedElement actCode = "SOUSCRIPTION" offerCode = "OFF_CAT" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRPAC"/>
+            <commercialName lang = "fr">app comm MEM : ACT_SOUSCRIPTION - OFF_CAT</commercialName>
+        </marketedElement>
+        <marketedElement actCode = "SOUSCRIPTION" offerCode = "OFF_ASS_VIE" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRPAC"/>
+        </marketedElement>
+        <marketedElement actCode = "RESILIATION" offerCode = "OFF_ASS_VIE" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRPAC"/>
+        </marketedElement>
+        <marketedElement actCode = "SOUSCRIPTION" offerCode = "OFF_DAV_LDC" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRNOR"/>
+            <commercialName lang = "fr">Offre multiproduit pour éligibilité</commercialName>
+        </marketedElement>
+        <marketedElement actCode = "SOUSCRIPTION" offerCode = "OFF_MULTI_P1" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRPAC"/>
+            <commercialName lang = "fr">Offre multiproduit P1</commercialName>
+        </marketedElement>
+        <marketedElement actCode = "SOUSCRIPTION" offerCode = "OFF_MULTI_P2" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRAJM"/>
+            <commercialName lang = "fr">Offre multiproduit P2</commercialName>
+        </marketedElement>
+        <marketedElement actCode = "SOUSCRIPTION" offerCode = "OFF_EURO" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRIFR"/>
+            <commercialName lang = "fr">Offre Souscription pour eligibilité</commercialName>
+        </marketedElement>
+        <marketedElement actCode = "MONTEE_GAMME" offerCode = "OFF_EURO" action = "c" startDate = "01-01-2011">
+            <channel channel = "MOBIL"/>
+            <channel channel = "INTER"/>
+            <distributor distributor = "CRAJM"/>
+            <commercialName lang = "fr">Offre après vente pour eligibilité</commercialName>
+        </marketedElement>
+    </marketedElementList>
+</catalog>
